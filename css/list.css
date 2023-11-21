@@ -1,0 +1,7 @@
+.hidden {
+    color: var(--bs-body-bg);
+}
+
+.trs:hover .hidden {
+    color: white;
+}

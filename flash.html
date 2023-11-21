@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>English FlashCard</title>
+</head>
+
+<body>
+  <h1>English FlashCard</h1>
+  <div class="fs-2"><a href="./list.html" target="_blank"
+      class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">List</a></div>
+  <div class="fs-2"><a href="./index.html" target="_blank"
+      class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Quiz</a></div>
+  <form name="lang_form">
+    <input name="lang_file" type="file" />
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" id="lang_ja"></h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" id="lang_en"></h5>
+        </div>
+      </div> 
+  </form>
+  <form>
+    <input type="button" value="ShowAnswer" class="btn btn-primary" onclick="OnSubmit();">
+    <input type="button" value="Next" class="btn btn-secondary" onclick="OnNext();">
+    <div id="timer" class="timer fs-3"></div>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="js/flash.js"></script>
+</body>
+
+</html>
